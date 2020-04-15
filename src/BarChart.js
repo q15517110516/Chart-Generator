@@ -8,7 +8,11 @@ am4core.useTheme(am4themes_animated);
 export class BarChart extends Component {
     
     componentDidMount() {
-        let chart = am4core.create("bar-chart", am4charts.XYChart);
+
+        const newId = this.props.id;
+        let Id = "bar-chart" + (newId.toString());
+
+        let chart = am4core.create(`${Id}`, am4charts.XYChart);
         let data = this.props.data;
         chart.data = data;
 
@@ -48,12 +52,16 @@ export class BarChart extends Component {
     }
 
     render() {
+        
+        const newId = this.props.id;
+        let Id = "bar-chart" + (newId.toString());
+
         return (
             <div className="barchart">
                 <div className="title" style={{width: "100%", textAlign: "center"}}>
                     <h3 style={{padding: 10}}>Bar Chart</h3>
                 </div>
-                <div id="bar-chart" style={{ width: "100%", height: 400}} ></div>
+                <div id={`${Id}`} style={{ width: "100%", height: 400}} ></div>
             </div>
         )
     }

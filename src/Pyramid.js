@@ -7,8 +7,10 @@ am4core.useTheme(am4themes_animated);
 
 export class Pyramid extends Component {
     componentDidMount(){
+        const newId = this.props.id;
+        let Id = "pyramid" + (newId.toString());
         
-        let chart = am4core.create("pyramid", am4charts.SlicedChart);
+        let chart = am4core.create(`${Id}`, am4charts.SlicedChart);
         let data = this.props.data;
         chart.data = data;
         chart.paddingBottom = 30;
@@ -28,12 +30,16 @@ export class Pyramid extends Component {
     }
 
     render() {
+
+        const newId = this.props.id;
+        let Id = "pyramid" + (newId.toString());
+
         return (
             <div className="pyramid">
                 <div className="title" style={{width: "100%", textAlign: "center"}}>
                     <h3 style={{padding: 10}}>Pyramid</h3>
                 </div>
-                <div id="pyramid" style={{ width: "100%", height: 400}} ></div>
+                <div id={`${Id}`} style={{ width: "100%", height: 400}} ></div>
             </div>
         )
     }

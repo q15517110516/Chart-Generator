@@ -7,7 +7,10 @@ am4core.useTheme(am4themes_animated);
 
 export class Semicircle extends Component {
     componentDidMount(){
-        let chart = am4core.create("semi-circle", am4charts.PieChart);
+        const newId = this.props.id;
+        let Id = "semi-circle" + (newId.toString());
+
+        let chart = am4core.create(`${Id}`, am4charts.PieChart);
         let data = this.props.data;
         chart.data = data;
         chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
@@ -42,12 +45,16 @@ export class Semicircle extends Component {
     }
 
     render() {
+
+        const newId = this.props.id;
+        let Id = "semi-circle" + (newId.toString());
+
         return (
             <div className="semi-circle">
                 <div className="title" style={{width: "100%", textAlign: "center"}}>
                     <h3 style={{padding: 10}}>Semi Circle</h3>
                 </div>
-                <div id="semi-circle" style={{ width: "100%", height: 400}} ></div>
+                <div id={`${Id}`} style={{ width: "100%", height: 400}} ></div>
             </div>
         )
     }
