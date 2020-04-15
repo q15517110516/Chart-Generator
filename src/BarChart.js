@@ -24,7 +24,7 @@ export class BarChart extends Component {
         return dy;
         });
 
-        // let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+        let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 
         // Create series
         let series = chart.series.push(new am4charts.ColumnSeries());

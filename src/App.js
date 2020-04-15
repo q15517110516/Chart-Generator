@@ -6,7 +6,6 @@ import Pyramid from './Pyramid';
 import Semicircle from './Semi-circle';
 
 
-
 export class App extends Component {
   constructor(props){
     super(props);
@@ -20,6 +19,7 @@ export class App extends Component {
       ],
       template: [],
       charts: "",
+      count: 0,
     
     }
     this.addItem = this.addItem.bind(this);
@@ -70,14 +70,19 @@ export class App extends Component {
   showChart(e){
     let chart = this.state.charts;
     let data = this.state.items;
+    let newCount = this.state.count;
+    this.setState({
+      count: newCount + 1,
+    })
+
+    
 
     // when the value eqauls "pie", generate piechart
     if(chart === "pie"){
       this.setState({
         template: [
           ...this.state.template,
-          <PieChart data={data} />,
-          
+          <PieChart data={data} id={newCount}/>,
         ]
       })
     }
@@ -87,7 +92,7 @@ export class App extends Component {
       this.setState({
         template: [
           ...this.state.template,
-          <Semicircle data={data}/>
+          <Semicircle data={data} id={newCount}/>
         ]
       })
       
@@ -98,7 +103,7 @@ export class App extends Component {
       this.setState({
         template: [
           ...this.state.template,
-          <BarChart data={data}/>
+          <BarChart data={data} id={newCount}/>
         ]
       })
     }
@@ -108,7 +113,7 @@ export class App extends Component {
       this.setState({
         template: [
           ...this.state.template,
-          <Pyramid data={data}/>
+          <Pyramid data={data} id={newCount}/>
         ]
       })
     }
@@ -221,7 +226,6 @@ export class App extends Component {
               return (
                 <div className="chart" key={i}>
                   {temp}
-                  {console.log(i)}
                 </div>
                 )
             })}
