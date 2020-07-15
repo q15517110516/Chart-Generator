@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/ChartGenerator/static/css/main.7ec0f80f.chunk.css",
-    "main.js": "/ChartGenerator/static/js/main.30de5238.chunk.js",
-    "main.js.map": "/ChartGenerator/static/js/main.30de5238.chunk.js.map",
-    "runtime-main.js": "/ChartGenerator/static/js/runtime-main.d07d66fa.js",
-    "runtime-main.js.map": "/ChartGenerator/static/js/runtime-main.d07d66fa.js.map",
+    "main.js": "/ChartGenerator/static/js/main.897ab586.chunk.js",
+    "main.js.map": "/ChartGenerator/static/js/main.897ab586.chunk.js.map",
+    "runtime-main.js": "/ChartGenerator/static/js/runtime-main.7dcd6e2e.js",
+    "runtime-main.js.map": "/ChartGenerator/static/js/runtime-main.7dcd6e2e.js.map",
     "xlsx.js": "/ChartGenerator/static/js/xlsx.56c96a98.chunk.js",
     "xlsx.js.map": "/ChartGenerator/static/js/xlsx.56c96a98.chunk.js.map",
     "static/js/3.dd2621b0.chunk.js": "/ChartGenerator/static/js/3.dd2621b0.chunk.js",
@@ -14,22 +14,22 @@
     "static/js/4.70fb0877.chunk.js.map": "/ChartGenerator/static/js/4.70fb0877.chunk.js.map",
     "static/js/5.f580cb5e.chunk.js": "/ChartGenerator/static/js/5.f580cb5e.chunk.js",
     "static/js/5.f580cb5e.chunk.js.map": "/ChartGenerator/static/js/5.f580cb5e.chunk.js.map",
-    "static/js/6.6a23c045.chunk.js": "/ChartGenerator/static/js/6.6a23c045.chunk.js",
-    "static/js/6.6a23c045.chunk.js.map": "/ChartGenerator/static/js/6.6a23c045.chunk.js.map",
+    "static/js/6.f03ba839.chunk.js": "/ChartGenerator/static/js/6.f03ba839.chunk.js",
+    "static/js/6.f03ba839.chunk.js.map": "/ChartGenerator/static/js/6.f03ba839.chunk.js.map",
     "index.html": "/ChartGenerator/index.html",
-    "precache-manifest.dd6d7577c9af5502336b69dc259035e9.js": "/ChartGenerator/precache-manifest.dd6d7577c9af5502336b69dc259035e9.js",
+    "precache-manifest.b7f32054d8e9e261d58a21901d1a9d93.js": "/ChartGenerator/precache-manifest.b7f32054d8e9e261d58a21901d1a9d93.js",
     "service-worker.js": "/ChartGenerator/service-worker.js",
     "static/css/4.89f067aa.chunk.css.map": "/ChartGenerator/static/css/4.89f067aa.chunk.css.map",
     "static/css/main.7ec0f80f.chunk.css.map": "/ChartGenerator/static/css/main.7ec0f80f.chunk.css.map",
     "static/js/4.70fb0877.chunk.js.LICENSE.txt": "/ChartGenerator/static/js/4.70fb0877.chunk.js.LICENSE.txt",
     "static/js/5.f580cb5e.chunk.js.LICENSE.txt": "/ChartGenerator/static/js/5.f580cb5e.chunk.js.LICENSE.txt",
-    "static/js/6.6a23c045.chunk.js.LICENSE.txt": "/ChartGenerator/static/js/6.6a23c045.chunk.js.LICENSE.txt"
+    "static/js/6.f03ba839.chunk.js.LICENSE.txt": "/ChartGenerator/static/js/6.f03ba839.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d07d66fa.js",
+    "static/js/runtime-main.7dcd6e2e.js",
     "static/css/4.89f067aa.chunk.css",
     "static/js/4.70fb0877.chunk.js",
     "static/css/main.7ec0f80f.chunk.css",
-    "static/js/main.30de5238.chunk.js"
+    "static/js/main.897ab586.chunk.js"
   ]
 }
